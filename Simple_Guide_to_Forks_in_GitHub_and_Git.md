@@ -21,17 +21,22 @@ Go to https://github.com/fusionpbx/fusionpbx and click Fork (upper right)
 On your local device:
 
 ``` cd /var/www/
-git clone https://github.com/TekMason/fusionpbx.git``` 
+git clone https://github.com/TekMason/fusionpbx.git
+``` 
 
 Configure git so it doesn’t commit file permission changes
 
-```nano /var/www/fusionpbx/.git/config
-	filemode = false```
+```
+nano /var/www/fusionpbx/.git/config
+	filemode = false
+```
 
 Set Permissions
 
-```chown -R www-data:www-data /var/www/fusionpbx
-chmod -R 775 /var/www/fusionpbx```
+```
+chown -R www-data:www-data /var/www/fusionpbx
+chmod -R 775 /var/www/fusionpbx
+```
 
 ### 3-Update a File
 
@@ -39,11 +44,13 @@ Edit files
 
 ### 4-Commit
 
-```git status
+```
+git status
 git add .
 git commit -m "Summary of what is in this commit "
 git push
-GO to your repo and do a pull request```
+GO to your repo and do a pull request
+```
 
 Repeat steps 3 and 4
 
@@ -51,7 +58,8 @@ Repeat steps 3 and 4
 
 **One time**
 
-```git –v
+```
+git –v
 **origin  https://github.com/TekMason/fusionpbx.git (fetch)**
 **origin  https://github.com/TekMason/fusionpbx.git (push)**
 git remote add upstream https://github.com/fusionpbx/fusionpbx.git
@@ -59,12 +67,15 @@ git remote -v
 **origin  https://github.com/TekMason/fusionpbx.git (fetch)**
 **origin  https://github.com/TekMason/fusionpbx.git (push)**
 upstream        https://github.com/fusionpbx/fusionpbx.git (fetch)
-upstream        https://github.com/fusionpbx/fusionpbx.git (push)```
+upstream        https://github.com/fusionpbx/fusionpbx.git (push)
+```
 
 **Repeat with each sync**
 
-```git fetch upstream
+```
+git fetch upstream
 git merge upstream/master
 git reset upstream/master
-git push --force```
+git push --force
+```
 
