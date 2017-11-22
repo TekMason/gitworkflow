@@ -7,3 +7,10 @@ change to
         #yealink
         rewrite "^.*/provision/(y[0-9]{12})(\.(cfg|boot)?$" /app/provision/index.php?file=$1.cfg;
         rewrite "^.*/provision/([A-Fa-f0-9]{12})(\.(xml|cfg|boot))?$" /app/provision/index.php?mac=$1 last;
+
+		
+Note:
+y000000000000.boot
+overwrite_mode =  
+is described on Page 20 of
+http://support.yealink.com/attachmentDownload/download?path=upload%2Fattachment%2F2017-9-20%2F3%2F69be1ab8-91d3-46d7-b6f8-e2c7abe35272%2FYealink+SIP+IP+Phones+Auto+Provisioning+Guide_V81_73.pdf
