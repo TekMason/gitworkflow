@@ -60,12 +60,12 @@ Repeat steps 3 and 4
 
 ```
 git –v
-**origin  https://github.com/TekMason/fusionpbx.git (fetch)**
-**origin  https://github.com/TekMason/fusionpbx.git (push)**
+origin  https://github.com/TekMason/fusionpbx.git (fetch)
+origin  https://github.com/TekMason/fusionpbx.git (push)
 git remote add upstream https://github.com/fusionpbx/fusionpbx.git
 git remote -v
-**origin  https://github.com/TekMason/fusionpbx.git (fetch)**
-**origin  https://github.com/TekMason/fusionpbx.git (push)**
+origin  https://github.com/TekMason/fusionpbx.git (fetch)
+origin  https://github.com/TekMason/fusionpbx.git (push)
 upstream        https://github.com/fusionpbx/fusionpbx.git (fetch)
 upstream        https://github.com/fusionpbx/fusionpbx.git (push)
 ```
