@@ -1,11 +1,10 @@
 cat /var/log/nginx/access.log | grep '192.168.211.109'
-
 192.168.211.109 - - [21/Nov/2017:23:48:03 -0500] "GET /provision/001565905e16.boot HTTP/1.1" 404 168 "-" "Yealink SIP-T46G 28.82.0.20 00:15:65:90:5e:16"
 192.168.211.109 - - [21/Nov/2017:23:48:05 -0500] "GET /provision/y000000000000.boot HTTP/1.1" 404 168 "-" "Yealink SIP-T46G 28.82.0.20 00:15:65:90:5e:16"
 
 
 
-nano /etc/nginx/sites-enabled/fusionpbx
+Mark needs to change /etc/nginx/sites-enabled/fusionpbx
 
         #yealink
         rewrite "^.*/provision/(y[0-9]{12})(\.cfg)?$" /app/provision/index.php?file=$1.cfg;
@@ -16,8 +15,9 @@ change to
         rewrite "^.*/provision/([A-Fa-f0-9]{12})(\.(xml|cfg|boot))?$" /app/provision/index.php?mac=$1 last;
 
 	
-Add files
-/var/www/fusionpbx/resources/templates/provision/yealink/<model>/{$mac}.cfg 
+I'll add {$mac}.boot files and PR
+/var/www/fusionpbx/resources/templates/provision/yealink/<model>/{$mac}.boot
+
 	
 Note:
 y000000000000.boot
