@@ -35,3 +35,7 @@ y000000000000.boot
 overwrite_mode =  
 is described on Page 20 of
 http://support.yealink.com/attachmentDownload/download?path=upload%2Fattachment%2F2017-9-20%2F3%2F69be1ab8-91d3-46d7-b6f8-e2c7abe35272%2FYealink+SIP+IP+Phones+Auto+Provisioning+Guide_V81_73.pdf
+
+
+include:config "{$mac}.cfg"
+include:config "{$mac}.cfg"
